@@ -1,5 +1,8 @@
 
-
+*{
+    margin-right: 0px;
+    margin-left: 5px;
+}
 table, th, td{
     border: 1px solid black;
 }
@@ -15,3 +18,32 @@ img{
     width: 300px;
     height: 300px;
 }
+
+
+.signup{
+    margin-bottom: 0px;
+}
+.free{
+    margin-top: 0px;
+}
+.fill{
+    border-radius: 5px;
+    margin: 5px;
+    background-color:rgb(245,246,247);
+    
+}
+.fill:hover{
+    background-color: black;
+    color: white;
+
+}
+
+.title{
+    font-size: 12px;
+    margin-bottom: 0px;
+    
+}
+.submit{
+    
+}
+
