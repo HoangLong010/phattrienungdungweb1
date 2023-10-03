@@ -4,14 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Đinh Hoàng Long - 2121050394</title>
+    <script>
+        let counter = 0;
+        function count(){
+            counter++;
+            document.querySelector('#counter').innerHTML = counter;
+        }
+    </script>
+
 </head>
 <body>
-    <script>
+
+    <p>Đinh Hoàng Long 2121050394</p>
+    <h1 id="counter">0</h1>
+    <button onclick="count()">Click Here!</button>
+    
+
+
+    <!-- <script>
         alert("Đinh Hoàng Long - 2121050394")
     </script>
     <h1>Đinh Hoàng Long - 2121050394</h1>
     <button onclick="hello()">Click Here!</button>
-    
+     -->
     
 </body>
 <script>
@@ -21,16 +36,14 @@
         
     // }
     
-    function hello(){
-        document.querySelector('h1').innerHTML = 'đinh hoàng long - 2121050394'
-    }
-
-    <!--
-        querySelector : chỉ trả lại giá trị duy nhất 1 selector đầu tiên trong trang web 
-        .document.querySelector("tên thẻ")
-        .document.querySelector("#ID")
-        .document.querySelector(".class")
+    // function hello(){
+    //     document.querySelector('h1').innerHTML = 'đinh hoàng long - 2121050394'
+    // }
+    // querySelector : chỉ trả lại giá trị duy nhất 1 selector đầu tiên trong trang web 
+    // .document.querySelector("tên thẻ")
+    // .document.querySelector("#ID")
+    // .document.querySelector(".class")
     
-    -->
+
 </script>
 </html>
