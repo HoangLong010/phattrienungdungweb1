@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        document.addEventListener('DOMContentLoaded', function(){
+            document.querySelector('#form').onsubmit = tinhTong;
+        });
+
+        function tinhTong(){
+            // const name = document.querySelector('#name').value;
+            //     alert(`Hello ${name}!`);
+            let a = Number(document.querySelector('#giatri1').value);
+            let b = Number(document.querySelector('#giatri2').value);
+
+            let sum = a + b;
+            alert(`Tổng là ${sum}`);
+        }
+    </script>
+
+    <form id="form">
+        <!-- <input type="text" id="name" autofocus placeholder="Name">
+        <input type="submit" > -->
+        Nhập số a: <input type="text" id="giatri1"><br>
+        Nhập số b: <input type="text" id="giatri2"><br>
+        Tổng a và b là: <br>
+        <input type="submit" value="Tính Tổng">
+    </form>
+    
+</body>
+</html>
