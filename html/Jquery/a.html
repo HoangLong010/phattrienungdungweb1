@@ -103,120 +103,32 @@
 // });
 
 
+// $(document).ready(function(){
+//   $("button").click(function(){
+//     var txt = "";
+//     txt += "Width of div: " + $("#div1").width() + "</br>";
+//     txt += "Height of div: " + $("#div1").height() + "</br>";
+//     txt += "Inner width of div: " + $("#div1").innerWidth() + "</br>";
+//     txt += "Inner height of div: " + $("#div1").innerHeight();
+//     $("#div1").html(txt);
+//   });
+// });
+
 $(document).ready(function(){
-  $("button").click(function(){
-    var txt = "";
-    txt += "Width of div: " + $("#div1").width() + "</br>";
-    txt += "Height of div: " + $("#div1").height() + "</br>";
-    txt += "Inner width of div: " + $("#div1").innerWidth() + "</br>";
-    txt += "Inner height of div: " + $("#div1").innerHeight();
-    $("#div1").html(txt);
-  });
+  $("span").parentsUntil("div").css({"color": "red", "border": "2px solid red"});
 });
+
 </script>
 </head>
-<body>
 
-<!-- <p>If you click on me, I will disappear.</p>
-<p>Đinh Hoàng Long - 2121050394</p>
-<p>Click me too!</p>
-<p id="test">Đinh Hoàng Long  - 2121050394 </p>
+<body class="ancestors"> body (great-great-grandparent)
+    <div style="width:500px;">div (great-grandparent)
+      <ul>ul (grandparent)  
+        <li>li (direct parent)
+          <span>span</span>
+        </li>
+      </ul>   
+    </div>
+  </body>
 
-<button>Click me</button>
-<p id="p1">Đinh Hoàng Long 2121050394.</p>
-
-
-
-<button>Hide</button>
-
-<p>This is a paragraph with little content.</p>
-<p>This is another small paragraph.</p>
-
-<button>Đinh Hoàng Long 2121050394</button><br><br>
-
-<div id="div1" style="width:80px;height:80px;background-color:red;"></div><br>
-<div id="div2" style="width:80px;height:80px;background-color:green;"></div><br>
-<div id="div3" style="width:80px;height:80px;background-color:blue;"></div>
-
-<div id="flip">Click to slide the panel down or up</div>
-<div id="panel">Hello world!</div>
-
-<button>Đinh Hoàng Long 2121050394</button>
-
-<p>By default, all HTML elements have a static position, and cannot be moved. To manipulate the position, remember to first set the CSS position property of the element to relative, fixed, or absolute!</p>
-
-<div style="background:#98bf21;height:100px;width:100px;position:absolute;"></div>
-
-<body>
- 
-    <button id="stop">Stop sliding</button>
-    
-    <div id="flip">Click to slide down panel</div>
-    <div id="panel">Hello world!</div>
-    
-    </body>
-
-<button>Hide</button>
-
-<p>This is a paragraph with little content.</p> -->
-<!-- 
-<p id="p1">jQuery is fun!!</p>
-
-<button>Click me</button> -->
-<!-- 
-<p id="test1">Đinh Hoàng Long 2121050394</p>
-<p id="test2">This is another paragraph.</p>
-
-<p>Input field: <input type="text" id="test3" value="Mickey Mouse"></p>
-
-<button id="btn1">Set Text</button>
-<button id="btn2">Set HTML</button>
-<button id="btn3">Set Value</button> -->
-<!-- <p>Đinh Hoàng Long 2121050394</p>
-<p>This is another paragraph.</p>
-
-<ol>
-  <li>List item 1</li>
-  <li>List item 2</li>
-  <li>List item 3</li>
-</ol>
-
-<button id="btn1">Append text</button>
-<button id="btn2">Append list items</button> -->
-
-<!-- <h1>Heading 1</h1>
-<h2>Heading 2</h2>
-
-<p>Đinh Hoàng Long 2121050394</p>
-<p>This is another paragraph.</p>
-
-<div>This is some important text!</div><br>
-
-<button>Add classes to elements</button> -->
-
-<!-- <h2>This is a heading</h2>
-
-<p style="background-color:#ff0000">This is a paragraph.</p>
-<p style="background-color:#00ff00">This is a paragraph.</p>
-<p style="background-color:#0000ff">This is a paragraph.</p>
-
-<p>Đinh Hoàng Long 2121050394</p>
-
-<button>Set background-color of p</button> -->
-
-<div id="div1"></div>
-<br>
-
-<button>ĐInh Hoàng Long</button>
-
-<p>innerWidth() - returns the width of an element (includes padding).</p>
-<p>innerHeight() - returns the height of an element (includes padding).</p>
-
-
-
-
-
-
-
-</body>
 </html>
