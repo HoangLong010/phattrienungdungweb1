@@ -20,6 +20,14 @@ $(document).ready(function(){
     $("p").hide(1000);
   });
 });
+
+$(document).ready(function(){
+  $("button").click(function(){
+    $("#div1").fadeOut();
+    $("#div2").fadeOut("slow");
+    $("#div3").fadeOut(3000);
+  });
+});
 </script>
 </head>
 <body>
@@ -32,10 +40,19 @@ $(document).ready(function(){
 <button>Click me</button>
 <p id="p1">Đinh Hoàng Long 2121050394.</p>
 
+
+
 <button>Hide</button>
 
 <p>This is a paragraph with little content.</p>
 <p>This is another small paragraph.</p>
+
+<button>Đinh Hoàng Long 2121050394</button><br><br>
+
+<div id="div1" style="width:80px;height:80px;background-color:red;"></div><br>
+<div id="div2" style="width:80px;height:80px;background-color:green;"></div><br>
+<div id="div3" style="width:80px;height:80px;background-color:blue;"></div>
+
 
 </body>
 </html>
