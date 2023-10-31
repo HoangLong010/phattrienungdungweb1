@@ -50,6 +50,14 @@ $(document).ready(function(){
     $("#panel").stop();
   });
 });
+
+$(document).ready(function(){
+  $("button").click(function(){
+    $("p").hide("slow", function(){
+      alert("The paragraph is now hidden");
+    });
+  });
+});
 </script>
 </head>
 <body>
@@ -92,6 +100,11 @@ $(document).ready(function(){
     <div id="panel">Hello world!</div>
     
     </body>
+
+<button>Hide</button>
+
+<p>This is a paragraph with little content.</p>
+
 
 
 
