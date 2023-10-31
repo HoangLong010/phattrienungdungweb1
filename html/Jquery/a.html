@@ -41,6 +41,15 @@ $(document).ready(function(){
     $("div").animate({left: '250px'});
   });
 });
+
+$(document).ready(function(){
+  $("#flip").click(function(){
+    $("#panel").slideDown(5000);
+  });
+  $("#stop").click(function(){
+    $("#panel").stop();
+  });
+});
 </script>
 </head>
 <body>
@@ -74,6 +83,15 @@ $(document).ready(function(){
 <p>By default, all HTML elements have a static position, and cannot be moved. To manipulate the position, remember to first set the CSS position property of the element to relative, fixed, or absolute!</p>
 
 <div style="background:#98bf21;height:100px;width:100px;position:absolute;"></div>
+
+<body>
+ 
+    <button id="stop">Stop sliding</button>
+    
+    <div id="flip">Click to slide down panel</div>
+    <div id="panel">Hello world!</div>
+    
+    </body>
 
 
 
