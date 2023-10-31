@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="stylesheet" href="a.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script>
 $(document).ready(function(){
@@ -28,6 +29,12 @@ $(document).ready(function(){
     $("#div3").fadeOut(3000);
   });
 });
+
+$(document).ready(function(){
+  $("#flip").click(function(){
+    $("#panel").slideToggle("slow");
+  });
+});
 </script>
 </head>
 <body>
@@ -52,6 +59,10 @@ $(document).ready(function(){
 <div id="div1" style="width:80px;height:80px;background-color:red;"></div><br>
 <div id="div2" style="width:80px;height:80px;background-color:green;"></div><br>
 <div id="div3" style="width:80px;height:80px;background-color:blue;"></div>
+
+<div id="flip">Click to slide the panel down or up</div>
+<div id="panel">Hello world!</div>
+
 
 
 </body>
