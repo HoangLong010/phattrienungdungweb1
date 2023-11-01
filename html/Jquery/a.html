@@ -113,23 +113,33 @@
 //     $("#div1").html(txt);
 //   });
 // });
-
 $(document).ready(function(){
-  $("h2").nextAll().css({"color": "red", "border": "2px solid red"});
+  $("div").last().css("background-color", "yellow");
 });
 
 </script>
 </head>
+<body>
+  <h1>Welcome to My Homepage</h1>
 
-<body class="siblings">
+<p>This is a paragraph.</p>
 
-    <div>div (parent)
-      <p>p</p>
-      <span>span</span>
-      <h2>h2</h2>
-      <h3>h3</h3>
-      <p>p</p>
-    </div>
-    
-    </body>
+<div style="border: 1px solid black;">
+  <p>A paragraph in a div.</p>
+  <p>Another paragraph in a div.</p>
+</div>
+<br>
+
+<div style="border: 1px solid black;">
+  <p>A paragraph in another div.</p>
+  <p>Another paragraph in another div.</p>
+</div>
+<br>
+
+<div style="border: 1px solid black;">
+  <p>A paragraph in another div.</p>
+  <p>Another paragraph in another div.</p>
+</div>
+</body>
+
 </html>
