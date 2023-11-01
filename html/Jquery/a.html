@@ -128,13 +128,14 @@
 //     });
 //   });
 
-$.noConflict();
-jQuery(document).ready(function(){
-  jQuery("button").click(function(){
-    jQuery("p").text("jQuery is still working!");
+$(document).ready(function(){
+  $("#myInput").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#myList li").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
   });
 });
-
 </script>
 </head>
 <body>
@@ -159,8 +160,17 @@ jQuery(document).ready(function(){
   <p>Another paragraph in another div.</p>
 </div>
 </body>
-<p>Đinh Hoàng Long</p>
-<button>Test jQuery</button>
+<h2>Filterable List</h2>
+<p>Type something in the input field to search the list for specific items:</p>  
+<input id="myInput" type="text" placeholder="Search..">
+<br>
+
+<ul id="myList">
+  <li>First item</li>
+  <li>Second item</li>
+  <li>Third item</li>
+  <li>Fourth</li>
+</ul>
 
 
 
