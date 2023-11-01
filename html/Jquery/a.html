@@ -136,12 +136,18 @@
 //   });
 // });
 
+// $(document).ready(function(){
+//   $("#hide").click(function(){
+//     $("p").hide();
+//   });
+//   $("#show").click(function(){
+//     $("p").show();
+//   });
+// });
+
 $(document).ready(function(){
-  $("#hide").click(function(){
-    $("p").hide();
-  });
-  $("#show").click(function(){
-    $("p").show();
+  $("#flip").click(function(){
+    $("#panel").slideUp("slow");
   });
 });
 </script>
@@ -185,6 +191,12 @@ $(document).ready(function(){
 
 <button id="hide">Hide</button>
 <button id="show">Show</button>
+
+<body>
+ 
+  <div id="flip">Click to slide up panel</div>
+  <div id="panel">Đinh Hoàng Long 2121050394</div>
+  
 
 
 
