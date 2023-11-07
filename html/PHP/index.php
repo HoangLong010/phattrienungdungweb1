@@ -3,6 +3,8 @@
 <title>W3.CSS</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
 <body>
 
 <div class="w3-card-4">
@@ -19,6 +21,19 @@
     <p>
     <button class="w3-btn w3-brown">Register</button></p>
   </form>
+
+  <?php
+    echo"MY FIRST PHP FILE";
+    echo"<h3>Hello World</h3>";
+    echo"<select>";
+    echo"<option>1</option>";
+    echo"<option>2</option>";
+    echo"</select>";
+    echo"Đinh Hoàng Long 2121050394"
+
+   
+  ?>
+
 </div>
 
 </body>
