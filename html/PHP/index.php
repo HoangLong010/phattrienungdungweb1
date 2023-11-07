@@ -29,7 +29,13 @@
     echo"<option>1</option>";
     echo"<option>2</option>";
     echo"</select>";
-    echo"Đinh Hoàng Long 2121050394"
+    echo"Đinh Hoàng Long 2121050394";
+    $longAccount = 10000000;
+    echo"Số tiền trong tài khoản Long: $longAccount";
+    $HUMGPay = 10000000;
+    echo"HUMG chuyển tiền: $HUMGPay";
+    $longAccount = $longAccount + $HUMGPay;
+    echo"Số tiền trong tài khoản Long: $longAccount";  
 
    
   ?>
