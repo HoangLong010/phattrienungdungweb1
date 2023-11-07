@@ -11,44 +11,45 @@
   <div class="w3-container w3-brown">
     <h2>Input Colors</h2>
   </div>
-  <form class="w3-container" action="/action_page.php">
+  <form class="w3-container" action="action_page.php" method ='get'>
     <p>      
     <label class="w3-text-brown"><b>First Name</b></label>
-    <input class="w3-input w3-border w3-sand" name="first" type="text"></p>
+    <input class="w3-input w3-border w3-sand" name="first" type="number"></p>
     <p>      
     <label class="w3-text-brown"><b>Last Name</b></label>
-    <input class="w3-input w3-border w3-sand" name="last" type="text"></p>
+    <input class="w3-input w3-border w3-sand" name="last" type="number"></p>
     <p>
     <button class="w3-btn w3-brown">Register</button></p>
   </form>
 
   <?php
-    echo"MY FIRST PHP FILE";
-    echo"<h3>Hello World</h3>";
-    echo"<select>";
-    echo"<option>1</option>";
-    echo"<option>2</option>";
-    echo"</select>";
-    echo"Đinh Hoàng Long 2121050394". '<br>';
-    $longAccount = 10000000;
-    echo"Số tiền trong tài khoản Long: $longAccount". '<br>';
-    $HUMGPay = 10000000;
-    echo"HUMG chuyển tiền: $HUMGPay". '<br>';
-    $longAccount = $longAccount + $HUMGPay;
-    echo"Số tiền trong tài khoản Long: $longAccount".'<br>';  
+    // echo"MY FIRST PHP FILE";
+    // echo"<h3>Hello World</h3>";
+    // echo"<select>";
+    // echo"<option>1</option>";
+    // echo"<option>2</option>";
+    // echo"</select>";
+    // echo"Đinh Hoàng Long 2121050394". '<br>';
+    // $longAccount = 10000000;
+    // echo"Số tiền trong tài khoản Long: $longAccount". '<br>';
+    // $HUMGPay = 10000000;
+    // echo"HUMG chuyển tiền: $HUMGPay". '<br>';
+    // $longAccount = $longAccount + $HUMGPay;
+    // echo"Số tiền trong tài khoản Long: $longAccount".'<br>';  
 
 
 
-    $Subject = 'lập trình ứng dụng web';
-    $unversityName = 'HUMG';
-    $firstNumber = 2;
-    $secondNumber = 2;
+    // $Subject = 'lập trình ứng dụng web';
+    // $unversityName = 'HUMG';
+    // $firstNumber = 2;
+    // $secondNumber = 2;
 
 
-    echo'Học '. $Subject.' ở phòng 502 tại trường '.$unversityName . '<br>';
-    echo'Học $Subject ở phòng học 502 tại trường $unversityName <br>';
-    echo'<h1>'. $unversityName.'</h1>'. '<br>';
-    echo $firstNumber + $secondNumber;
+    // echo'Học '. $Subject.' ở phòng 502 tại trường '.$unversityName . '<br>';
+    // echo'Học $Subject ở phòng học 502 tại trường $unversityName <br>';
+    // echo'<h1>'. $unversityName.'</h1>'. '<br>';
+    // echo $firstNumber + $secondNumber;
+    // echo $_GET["name"];
 
    
   ?>
