@@ -29,13 +29,26 @@
     echo"<option>1</option>";
     echo"<option>2</option>";
     echo"</select>";
-    echo"Đinh Hoàng Long 2121050394";
+    echo"Đinh Hoàng Long 2121050394". '<br>';
     $longAccount = 10000000;
-    echo"Số tiền trong tài khoản Long: $longAccount";
+    echo"Số tiền trong tài khoản Long: $longAccount". '<br>';
     $HUMGPay = 10000000;
-    echo"HUMG chuyển tiền: $HUMGPay";
+    echo"HUMG chuyển tiền: $HUMGPay". '<br>';
     $longAccount = $longAccount + $HUMGPay;
-    echo"Số tiền trong tài khoản Long: $longAccount";  
+    echo"Số tiền trong tài khoản Long: $longAccount".'<br>';  
+
+
+
+    $Subject = 'lập trình ứng dụng web';
+    $unversityName = 'HUMG';
+    $firstNumber = 2;
+    $secondNumber = 2;
+
+
+    echo'Học '. $Subject.' ở phòng 502 tại trường '.$unversityName . '<br>';
+    echo'Học $Subject ở phòng học 502 tại trường $unversityName <br>';
+    echo'<h1>'. $unversityName.'</h1>'. '<br>';
+    echo $firstNumber + $secondNumber;
 
    
   ?>
