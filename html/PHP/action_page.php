@@ -13,6 +13,10 @@
     
 
 <?php
+
+   echo'
+  ';
+   
     echo'<div class="w3-container w3-center w3-animate-top">';
     echo'<h1>Bạn đã đăng kí thành công</h1>';
     echo'</div>';
@@ -20,6 +24,7 @@
     echo'<h1>Tên của bạn là '. $_GET['first']. ' '. $_GET['last']. '</h1>';
     echo'<h1>Email: '. $_GET['email'].'</h1>';
     echo'<h1>Phone: ' . $_GET['phone'].'</h1>';
+    
 
 
 
