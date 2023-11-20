@@ -11,7 +11,7 @@
     if($_GET['response'] == 'yes'){
         echo'HAS BEEN QUITED';  
     }
-    if($_GET['response'] == 'no'){
+    else{
         echo'WILL BE CONTINUED IN 3 SECONDS';
     }
     echo'<br>AFTER IS STATEMENT';
