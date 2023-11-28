@@ -12,5 +12,10 @@
         echo"<img src = 'images/$item' width = 50px height = 50px alt ='$item'>";
     }
     ?>
+    <?php
+        for($x = 1; $x <= 10; $x += 1){
+            echo"<br>Day la so $x ";
+        }
+    ?>
 </body>
 </html>
