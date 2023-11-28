@@ -17,5 +17,14 @@
             echo"<br>Day la so $x ";
         }
     ?>
+    <?php
+        $x = 1;
+        while($x <= 10){
+            echo"<br>Day la so: $x ";
+            $x++;
+
+        }
+        
+    ?>
 </body>
 </html>
