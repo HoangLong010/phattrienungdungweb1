@@ -10,17 +10,18 @@
     $servername = 'localhost';
     $username = 'root';
     $password = '';
-    $db = 'myDB';
+    $db = 'myDB1';
     $conn = new mysqli($servername, $username, $password, $db);
 
     if($conn-> connect_error){
         die('Connection failed: '. $conn-> connect_error);
     }
     echo"Connected successfully <br>";
-    require 'connect.php';
+    
     $sql = "INSERT INTO flights (Origin, Destination, Duration) VALUES ('Hà Nội','Paris','4000')";
     // run the sql query
     $conn->query($sql);
+    $conn->close();
 
     ?>
     
