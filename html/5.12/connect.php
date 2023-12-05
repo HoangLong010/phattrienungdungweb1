@@ -18,10 +18,10 @@
     }
     echo"Connected successfully <br>";
     
-    $sql = "INSERT INTO flights (Origin, Destination, Duration) VALUES ('Hà Nội','Paris','4000')";
-    // run the sql query
-    $conn->query($sql);
-    $conn->close();
+    // $sql = "INSERT INTO flights (Origin, Destination, Duration) VALUES ('Hà Nội','Paris','4000')";
+    // // run the sql query
+    // $conn->query($sql);
+    // $conn->close();
 
     ?>
     
