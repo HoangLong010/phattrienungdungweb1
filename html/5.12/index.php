@@ -15,21 +15,30 @@
 
     $result = $conn-> query($sql);
 
-    if($result->num_rows > 0) // kiểm tra có kết quả trả về (2D array)
-    {
-        while($row = $result-> fetch_assoc()) //cú pháp đọc từng raw của kết quả trả về
-        {
-            echo"FligtID: ".$row["id"].
-                " Origin: ". $row["origin"].
-                " Destination: ". $row["destination"].
-                " Duration: ". $row["duration"]. "<br>";
+    // if($result->num_rows > 0) // kiểm tra có kết quả trả về (2D array)
+    // {
+    //     while($row = $result-> fetch_assoc()) //cú pháp đọc từng raw của kết quả trả về
+    //     {
+    //         echo"FligtID: ".$row["id"].
+    //             " Origin: ". $row["origin"].
+    //             " Destination: ". $row["destination"].
+    //             " Duration: ". $row["duration"]. "<br>";
 
-        } 
+    //     } 
 
-    }
-    else{
-        echo"No flight in database";
-    }
+    // }
+    // else{
+    //     echo"No flight in database";
+    // }
+    print_r($result);
+    // $row = $result->fetch_assoc();
+    // echo'<br>';
+    // print_r($row);
+    // $row = $result->fetch_assoc();
+    // echo'<br>';
+    // print_r($row);
+    
+   
     $conn->close();
 
     ?>
