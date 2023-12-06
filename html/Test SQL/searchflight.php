@@ -15,19 +15,24 @@
 
     </form>
     <?php
-
-            require 'connect.php';
-            $origin = $_GET['origin'];
-            $destination = $_GET['destination'];
-            
-            mysqli_set_charset($conn, 'UTF8'); //sua loi tieng viet
-
-            $sql = 'SELECT * FROM flights';
-            $result = $conn->query($sql);
-
-            require '4-displayFlight.php ';
-            $conn->close();
-            
+            if(isset($_GET['origin']))
+            {
+                require 'connect.php';
+                $origin = $_GET['origin'];
+                $destination = $_GET['destination'];
+                
+                mysqli_set_charset($conn, 'UTF8'); //sua loi tieng viet
+    
+                // $sql = 'SELECT * FROM flights WHERE origin = "$origin" and destination = "$destination"';
+                $sql = 'SELECT * FROM flights ';
+                $result = $conn->query($sql);
+    
+                require '4-displayFlight.php ';
+                $conn->close();
+                
+                
+            }
+           
             
             
 

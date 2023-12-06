@@ -40,7 +40,7 @@
         echo"No flight in database";
     }
     ?>
-     <h1>Đinh Hoàng Long 2121050394</h1>
+    <h1>Đinh Hoàng Long 2121050394</h1>
     
 </body>
 </html>
