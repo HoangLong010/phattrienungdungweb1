@@ -20,11 +20,13 @@
                 require 'connect.php';
                 $origin = $_GET['origin'];
                 $destination = $_GET['destination'];
+                // echo"$destination";
+                // echo"$origin";
                 
                 mysqli_set_charset($conn, 'UTF8'); //sua loi tieng viet
     
-                // $sql = 'SELECT * FROM flights WHERE origin = "$origin" and destination = "$destination"';
-                $sql = 'SELECT * FROM flights ';
+                $sql = "SELECT * FROM flights WHERE origin = '$origin' and destination = '$destination'";
+                // $sql = 'SELECT * FROM flights ';
                 $result = $conn->query($sql);
     
                 require '4-displayFlight.php ';
