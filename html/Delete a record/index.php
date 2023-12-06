@@ -10,7 +10,7 @@
      require 'connect.php';
      mysqli_set_charset($conn, 'UTF8');
 
-     $sql = "DELETE FROM passengers WHERE id= '1'";
+     $sql = "DELETE FROM flights WHERE id= '1'";
 
      if($conn->query($sql)=== TRUE)
      {
